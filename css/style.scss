@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$lightgreen: #74c69d;
+
+.navbar {
+  display: flex;
+  background-color: $lightgreen;
+  nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+  }
+  .logo {
+    display: flex;
+    padding-top: 35px;
+    padding-left: 135px;
+    width: 186px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-right: 180px;
+    padding-top: 48px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  .nav-container {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    overflow: hidden;
+  }
+}
+
+.hero {
+  background-color: $lightgreen;
+  .hero-container {
+    background-color: $lightgreen;
+    .hero-info {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding-top: 80px;
+      padding-left: 160px;
+    }
+    h2 {
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 5px;
+    }
+    span {
+      display: flex;
+      font-size: 40px;
+      font-family: "Crimson Text", serif;
+      font-weight: bold;
+      color: white;
+      gap: 10px;
+      padding: 15px 0;
+    }
+    p {
+      display: flex;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      color: hsla(0, 0%, 100%, 0.74);
+      gap: 10px;
+      padding: 15px 0;
+    }
+    button {
+      display: flex;
+      width: 170px;
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 25px;
+      border: none;
+      justify-content: center;
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+    }
+    .hero-image {
+      display: flex;
+      width: 65%;
+      margin: auto;
+      position: relative;
+      left: 500px;
+      bottom: 354px;
+      img {
+        width: 740px;
+      }
+    }
+  }
+}
