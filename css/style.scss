@@ -5,21 +5,36 @@
   margin: 0;
 }
 
+$crimson: "Crimson Text", serif;
+$worksans: "Poppins", sans-serif;
 $lightgreen: #74c69d;
+$colordark: #212529;
+
+.btn {
+  width: 170px;
+  height: 48px;
+  border: none;
+  background-color: $colordark;
+  color: white;
+  font-family: $worksans;
+  font-weight: 100;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
 
 .navbar {
   display: flex;
+  padding: 35px 0;
   background-color: $lightgreen;
-  nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    position: absolute;
-  }
   .logo {
     display: flex;
-    padding-top: 35px;
-    padding-left: 135px;
     width: 186px;
   }
   .nav-links {
@@ -27,8 +42,6 @@ $lightgreen: #74c69d;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding-right: 180px;
-    padding-top: 48px;
     a {
       display: flex;
       align-items: center;
@@ -37,33 +50,32 @@ $lightgreen: #74c69d;
       text-decoration: none;
       color: white;
       font-size: 20px;
-      font-family: "Poppins", sans-serif;
+      font-family: $worksans;
     }
   }
   .nav-container {
-    width: 1440px;
-    margin: auto;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    padding-inline: 20px;
-    overflow: hidden;
   }
 }
 
 .hero {
   background-color: $lightgreen;
   .hero-container {
-    background-color: $lightgreen;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     .hero-info {
       display: flex;
-      flex-direction: column;
       width: 40%;
-      padding-top: 80px;
-      padding-left: 160px;
+      flex-direction: column;
     }
     h2 {
       font-size: 16px;
-      font-family: "Poppins", sans-serif;
+      font-family: $worksans;
       font-weight: bold;
       color: white;
       letter-spacing: 5px;
@@ -71,7 +83,7 @@ $lightgreen: #74c69d;
     span {
       display: flex;
       font-size: 40px;
-      font-family: "Crimson Text", serif;
+      font-family: $crimson;
       font-weight: bold;
       color: white;
       gap: 10px;
@@ -80,7 +92,7 @@ $lightgreen: #74c69d;
     p {
       display: flex;
       font-size: 15px;
-      font-family: "Poppins", sans-serif;
+      font-family: $worksans;
       color: hsla(0, 0%, 100%, 0.74);
       gap: 10px;
       padding: 15px 0;
@@ -96,18 +108,57 @@ $lightgreen: #74c69d;
       border: none;
       justify-content: center;
       font-size: 20px;
-      font-family: "Poppins", sans-serif;
+      font-family: $worksans;
     }
     .hero-image {
       display: flex;
-      width: 65%;
-      margin: auto;
-      position: relative;
-      left: 500px;
-      bottom: 354px;
       img {
         width: 740px;
+        justify-self: end;
       }
+    }
+  }
+}
+
+.partners-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 72px;
+  width: 100%;
+  h2 {
+    font-family: $worksans;
+    color: $lightgreen;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 40px;
+    font-family: $crimson;
+    font-weight: bold;
+    padding-top: 16px;
+  }
+  p {
+    display: flex;
+    font-size: 20px;
+    font-family: $worksans;
+    text-align: center;
+    padding-top: 16px;
+  }
+  .partners-imgs {
+    margin: auto;
+    padding: 55px 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 68px;
+    img {
+      width: 200px;
     }
   }
 }
