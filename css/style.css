@@ -15,6 +15,7 @@
   font-weight: 100;
   font-size: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .container {
@@ -106,6 +107,7 @@
   justify-content: center;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .hero .hero-container .hero-image {
   display: flex;
@@ -115,7 +117,7 @@
   justify-self: end;
 }
 
-.partners-info {
+.title-n-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,27 +126,27 @@
   padding-bottom: 72px;
   width: 100%;
 }
-.partners-info h2 {
+.title-n-desc h2 {
   font-family: "Poppins", sans-serif;
   color: #74c69d;
   letter-spacing: 5px;
   font-size: 16px;
   font-weight: bold;
 }
-.partners-info span {
+.title-n-desc span {
   font-size: 40px;
   font-family: "Crimson Text", serif;
   font-weight: bold;
   padding-top: 16px;
 }
-.partners-info p {
+.title-n-desc p {
   display: flex;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding-top: 16px;
 }
-.partners-info .partners-imgs {
+.title-n-desc .partners-imgs {
   margin: auto;
   padding: 55px 0;
   display: flex;
@@ -154,6 +156,101 @@
   width: 100%;
   gap: 68px;
 }
-.partners-info .partners-imgs img {
+.title-n-desc .partners-imgs img {
   width: 200px;
+}
+
+.content-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.content-1 .content1-image {
+  display: flex;
+  width: 60%;
+}
+.content-1 .content1-image img {
+  width: 600px;
+}
+.content-1 .content1-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+.content-1 .content1-text h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #212529;
+}
+.content-1 .content1-text p {
+  font-size: 16px;
+  color: hsla(210, 11%, 15%, 0.747);
+  padding: 26px 0;
+}
+
+.content-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 74px;
+}
+.content-2 .content2-image {
+  display: flex;
+  width: 40%;
+}
+.content-2 .content2-image img {
+  width: 600px;
+}
+.content-2 .content2-text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+.content-2 .content2-text h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #212529;
+}
+.content-2 .content2-text p {
+  font-size: 16px;
+  color: hsla(210, 11%, 15%, 0.747);
+  padding: 26px 0;
+}
+
+.team-cards {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.team-cards .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.team-cards .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #888888;
+  padding: 30px 40px;
+}
+.team-cards .card img {
+  width: 175px;
+  display: flex;
+}
+.team-cards .card h2 {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Crimson Text", serif;
+  padding: 18px 0;
+}
+.team-cards .card p {
+  font-size: 14px;
+  font-family: sans-serif;
 }/*# sourceMappingURL=style.css.map */
