@@ -226,14 +226,15 @@ $colordark: #212529;
   }
 }
 
-.team-cards {
+.team {
   display: flex;
-  gap: 48px;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  .team {
+  .team-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -256,6 +257,42 @@ $colordark: #212529;
     p {
       font-size: 14px;
       font-family: sans-serif;
+    }
+  }
+}
+
+.btn-under-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 56px;
+  padding-bottom: 64px;
+}
+
+.bottomsite {
+  background-color: $lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 52px 0;
+  .footer {
+    justify-content: space-between;
+  }
+  .footer-icons {
+    img {
+      padding: 20px;
+    }
+  }
+  .footer-info {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-family: $worksans;
+      font-size: 20px;
+      color: white;
+      font-weight: normal;
     }
   }
 }

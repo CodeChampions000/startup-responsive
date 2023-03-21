@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$crimson: "Crimson Text", serif;
+$worksans: "Poppins", sans-serif;
+$lightgreen: #74c69d;
+$colordark: #212529;
+
+.btn {
+  width: 170px;
+  height: 48px;
+  border: none;
+  background-color: $colordark;
+  color: white;
+  font-family: $worksans;
+  font-weight: 100;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  padding: 35px 0;
+  background-color: $lightgreen;
+  .logo {
+    display: flex;
+    width: 186px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: $worksans;
+    }
+  }
+  .nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.title-n-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 72px;
+  width: 100%;
+  h2 {
+    font-family: $worksans;
+    color: $lightgreen;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 40px;
+    font-family: $crimson;
+    font-weight: bold;
+    padding-top: 16px;
+  }
+  p {
+    display: flex;
+    font-size: 20px;
+    font-family: $worksans;
+    text-align: center;
+    padding-top: 16px;
+  }
+}

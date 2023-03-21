@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  width: 170px;
+  height: 48px;
+  border: none;
+  background-color: #212529;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  padding: 35px 0;
+  background-color: #74c69d;
+}
+.navbar .logo {
+  display: flex;
+  width: 186px;
+}
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar .nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.navbar .nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title-n-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 72px;
+  width: 100%;
+}
+.title-n-desc h2 {
+  font-family: "Poppins", sans-serif;
+  color: #74c69d;
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.title-n-desc span {
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  padding-top: 16px;
+}
+.title-n-desc p {
+  display: flex;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 16px;
+}/*# sourceMappingURL=portfoliostyle.css.map */

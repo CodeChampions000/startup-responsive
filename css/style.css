@@ -221,36 +221,71 @@
   padding: 26px 0;
 }
 
-.team-cards {
+.team {
   display: flex;
-  gap: 48px;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
-.team-cards .team {
+.team .team-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.team-cards .card {
+.team .card {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px #888888;
   padding: 30px 40px;
 }
-.team-cards .card img {
+.team .card img {
   width: 175px;
   display: flex;
 }
-.team-cards .card h2 {
+.team .card h2 {
   display: flex;
   font-size: 24px;
   font-weight: bold;
   font-family: "Crimson Text", serif;
   padding: 18px 0;
 }
-.team-cards .card p {
+.team .card p {
   font-size: 14px;
   font-family: sans-serif;
+}
+
+.btn-under-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 56px;
+  padding-bottom: 64px;
+}
+
+.bottomsite {
+  background-color: #74c69d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 52px 0;
+}
+.bottomsite .footer {
+  justify-content: space-between;
+}
+.bottomsite .footer-icons img {
+  padding: 20px;
+}
+.bottomsite .footer-info {
+  display: flex;
+  align-items: center;
+}
+.bottomsite .footer-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */
