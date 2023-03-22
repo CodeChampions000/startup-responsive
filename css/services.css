@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  width: 170px;
+  height: 48px;
+  border: none;
+  background-color: #212529;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  padding: 35px 0;
+  background-color: #74c69d;
+}
+.navbar .logo {
+  display: flex;
+  width: 186px;
+}
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar .nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.navbar .nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title-n-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 72px;
+  width: 100%;
+}
+.title-n-desc h2 {
+  font-family: "Poppins", sans-serif;
+  color: #74c69d;
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.title-n-desc span {
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  padding-top: 16px;
+}
+.title-n-desc p {
+  display: flex;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 136px;
+}
+.plan-cards .plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 46px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 6px 2px 8px #212529;
+}
+.plan-cards .plans:hover {
+  scale: 115%;
+  background-size: 300px;
+}
+.plan-cards .plans h3 {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.plan-cards .plans .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-cards .plans .month h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.plan-cards .plans .month h4 {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: hsla(210, 11%, 15%, 0.5);
+  font-weight: normal;
+}
+.plan-cards .plans p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsla(210, 11%, 15%, 0.5);
+  margin-bottom: 22px;
+}
+.plan-cards .plans .checkmarks-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-cards .plans span {
+  margin-left: 10px;
+  padding: 14px 0;
+}
+.plan-cards .plans img {
+  width: 25px;
+}
+.plan-cards button {
+  margin-top: 46px;
+}
+
+.bottomsite {
+  background-color: #74c69d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 52px 0;
+}
+.bottomsite .footer {
+  justify-content: space-between;
+}
+.bottomsite .footer-icons img {
+  padding: 20px;
+}
+.bottomsite .footer-info {
+  display: flex;
+  align-items: center;
+}
+.bottomsite .footer-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}/*# sourceMappingURL=services.css.map */
