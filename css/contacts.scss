@@ -67,16 +67,9 @@ $colordark: #212529;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 72px;
   width: 100%;
-  h2 {
-    font-family: $worksans;
-    color: $lightgreen;
-    letter-spacing: 5px;
-    font-size: 16px;
-    font-weight: bold;
-  }
   span {
     font-size: 40px;
     font-family: $crimson;
@@ -92,66 +85,66 @@ $colordark: #212529;
   }
 }
 
-.plan-cards {
+.form-name {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 136px;
-  .plans {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 46px;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 6px 2px 8px $colordark;
-    &:hover {
-      scale: 115%;
-      background-size: 300px;
-    }
-    h3 {
-      font-size: 16px;
-      font-family: $worksans;
-    }
-    .month {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        font-size: 40px;
-        font-family: $worksans;
-        font-weight: bold;
-        padding-right: 10px;
-      }
-      h4 {
-        font-size: 15px;
-        font-family: $worksans;
-        color: hsla(210, 11%, 15%, 0.5);
-        font-weight: normal;
-      }
-    }
-    p {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: hsla(210, 11%, 15%, 0.5);
-      margin-bottom: 22px;
-    }
-    .checkmarks-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    span {
-      margin-left: 10px;
-      padding: 14px 0;
-    }
-    img {
-      width: 25px;
-    }
+  flex-direction: column;
+  label {
+    font-family: $worksans;
+    font-size: 20px;
   }
-  button {
-    margin-top: 46px;
+  input {
+    width: 578px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: #eeeeee;
+  }
+}
+
+.form-email {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-family: $worksans;
+    font-size: 20px;
+  }
+  input {
+    width: 578px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: #eeeeee;
+  }
+}
+
+.form-message {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-family: $worksans;
+    font-size: 20px;
+  }
+  input {
+    width: 578px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: #eeeeee;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  width: 100%;
+  margin-bottom: 94px;
+  img {
+    width: 578px;
   }
 }
 
