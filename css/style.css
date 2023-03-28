@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,13 +39,27 @@
   display: flex;
   width: 186px;
 }
-.navbar .nav-links {
+.navbar .menubutton {
+  width: 36px;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+#menu {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.navbar .nav-links a {
+.nav-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +69,8 @@
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
-.navbar .nav-container {
+
+.nav-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -113,6 +133,7 @@
   display: flex;
 }
 .hero .hero-container .hero-image img {
+  height: 428px;
   width: 740px;
   justify-self: end;
 }
@@ -175,7 +196,6 @@
 .content-1 .content1-text {
   display: flex;
   flex-direction: column;
-  width: 40%;
   justify-content: center;
 }
 .content-1 .content1-text h2 {
@@ -206,7 +226,6 @@
 .content-2 .content2-text {
   display: flex;
   flex-direction: column;
-  width: 60%;
   justify-content: center;
 }
 .content-2 .content2-text h2 {
@@ -276,7 +295,11 @@
 .bottomsite .footer {
   justify-content: space-between;
 }
+.bottomsite .footer-icons {
+  display: flex;
+}
 .bottomsite .footer-icons img {
+  height: 30px;
   padding: 20px;
 }
 .bottomsite .footer-info {
@@ -288,4 +311,109 @@
   font-size: 20px;
   color: white;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-container button {
+    display: block;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .hero .hero-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-container .hero-image {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero-container .hero-image img {
+    height: 100%;
+    width: 100%;
+  }
+  .hero .hero-container .hero-info {
+    width: 100%;
+    margin: auto;
+  }
+  .bottomsite .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottomsite .footer .footer-icons {
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomsite .footer .footer-icons img {
+    height: 20px;
+  }
+  #menu {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-links a {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    font-weight: bold;
+    font-family: "Crimson Text", serif;
+    font-size: 26px;
+    text-decoration: none;
+    color: #212529;
+  }
+  .partners-imgs {
+    flex-direction: column;
+  }
+  .content-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .content-1 .content1-image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .content-1 .content1-image img {
+    width: 100%;
+  }
+  .content2-text {
+    margin: auto;
+  }
+  .content-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .content-2 .content2-image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .content-2 .content2-image img {
+    width: 100%;
+  }
+  .content2-text {
+    margin: auto;
+  }
+  .team-cards {
+    flex-direction: column;
+    row-gap: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */

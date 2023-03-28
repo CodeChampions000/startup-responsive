@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,13 +39,22 @@
   display: flex;
   width: 186px;
 }
-.navbar .nav-links {
+.navbar .menubutton {
+  width: 36px;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.navbar .nav-links a {
+.nav-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,10 +64,16 @@
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
-.navbar .nav-container {
+
+.nav-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+#menu {
+  display: none;
+  margin-bottom: 5px;
 }
 
 .title-n-desc {
@@ -137,4 +157,56 @@
   font-size: 20px;
   color: white;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    padding: 20px;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+  .nav-container button {
+    display: block;
+  }
+  .port-projects {
+    justify-content: center;
+    align-items: center;
+  }
+  .bottomsite .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottomsite .footer .footer-icons {
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomsite .footer .footer-icons img {
+    height: 20px;
+  }
+  #menu {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu .mobile-links a {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    font-weight: bold;
+    font-family: "Crimson Text", serif;
+    font-size: 26px;
+    text-decoration: none;
+    color: #212529;
+  }
+  .port-projects .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .port-projects img {
+    width: 570px;
+  }
 }/*# sourceMappingURL=portfoliostyle.css.map */

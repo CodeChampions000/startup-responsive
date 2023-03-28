@@ -18,9 +18,20 @@
             <a href="./services.html">Services</a>
             <a href="./Contacts.html">Contact</a>
           </div>
+          <button id="menuButton">
+            <img class="menubutton" src="./images/list.png" alt="Menu Icon" />
+          </button>
         </div>
       </div>
     </nav>
+    <div id="menu">
+      <div class="mobile-links">
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./services.html">Services</a>
+        <a href="./Contacts.html">Contact</a>
+      </div>
+    </div>
     <div class="title-n-desc">
       <span>Contact Us</span>
       <p>
@@ -29,23 +40,27 @@
       </p>
     </div>
     <section class="container">
-      <form>
-        <div class="form-name">
-          <label for="fname">Name</label><br />
-          <input type="text" id="fname" name="fname" /><br />
+      <div class="contacts-container">
+        <form>
+          <div class="contact-info">
+            <div class="form-name">
+              <label for="fname">Name</label><br />
+              <input required type="text" id="fname" name="fname" /><br />
+            </div>
+            <div class="form-email">
+              <label for="femail">Email</label><br />
+              <input required type="text" id="femail" name="femail" /><br />
+            </div>
+            <div class="form-message">
+              <label for="fmessage">Message</label><br />
+              <input required type="text" id="fmessage" name="fmessage" /><br />
+            </div>
+            <button class="btn submit-btn" type="submit">Submit</button>
+          </div>
+        </form>
+        <div class="contact-image">
+          <img src="./images/Contacts/map.png" alt="map" />
         </div>
-        <div class="form-email">
-          <label for="femail">Email</label><br />
-          <input type="text" id="femail" name="femail" /><br />
-        </div>
-        <div class="form-message">
-          <label for="fmessage">Message</label><br />
-          <input type="text" id="fmessage" name="fmessage" /><br />
-        </div>
-        <input class="btn submit-btn" type="submit" />
-      </form>
-      <div class="contact-image">
-        <img src="./images/Contacts/map.png" alt="map" />
       </div>
     </section>
     <section class="bottomsite">
@@ -77,4 +92,5 @@
       </div>
     </section>
   </body>
+  <script src="./script/Contacts.js"></script>
 </html>

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,27 +44,41 @@ $colordark: #212529;
     display: flex;
     width: 186px;
   }
-  .nav-links {
+  .menubutton {
+    width: 36px;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    display: none;
+  }
+}
+
+#menu {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 36px;
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      font-family: $worksans;
-    }
+    gap: 36px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: $worksans;
   }
-  .nav-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
+}
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .hero {
@@ -115,6 +135,7 @@ $colordark: #212529;
     .hero-image {
       display: flex;
       img {
+        height: 428px;
         width: 740px;
         justify-self: end;
       }
@@ -179,7 +200,7 @@ $colordark: #212529;
   .content1-text {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    // width: 40%;
     justify-content: center;
     h2 {
       font-family: $crimson;
@@ -210,7 +231,6 @@ $colordark: #212529;
   .content2-text {
     display: flex;
     flex-direction: column;
-    width: 60%;
     justify-content: center;
     h2 {
       font-family: $crimson;
@@ -281,7 +301,9 @@ $colordark: #212529;
     justify-content: space-between;
   }
   .footer-icons {
+    display: flex;
     img {
+      height: 30px;
       padding: 20px;
     }
   }
@@ -294,5 +316,116 @@ $colordark: #212529;
       color: white;
       font-weight: normal;
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-container {
+    button {
+      display: block;
+    }
+  }
+  .hero {
+    padding: 20px;
+    .hero-container {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .hero-image {
+        width: 100%;
+        height: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .hero-info {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  .bottomsite {
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .footer-icons {
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+  #menu {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-links {
+    a {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 32px;
+      font-weight: bold;
+      font-family: $crimson;
+      font-size: 26px;
+      text-decoration: none;
+      color: $colordark;
+    }
+  }
+  .partners-imgs {
+    flex-direction: column;
+  }
+  .content-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .content1-image {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content2-text {
+    margin: auto;
+  }
+  .content-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .content2-image {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content2-text {
+    margin: auto;
+  }
+  .team-cards {
+    flex-direction: column;
+    row-gap: 35px;
   }
 }
